@@ -5,16 +5,16 @@ const Cabecera = () => {
 
     return (
 
-        <header className="cabecera</header>">
-            <div className="row</div>">
+        <header className="cabecera">
+            <div className="row">
                 <div className="col-4">
                     <img className="logo" src={logo} alt="Logo" /> 
                 </div>
                 <div className="col-4">
-                    <p>hOLAAAAAAAAA</p>
+                    <p>Marca Personal FP</p>
                 </div>
                 <div className="col-4">
-                    <p>hOLAAAAAAAAA</p>
+                    <Idiomas></Idiomas>
                 </div>
             </div>  
         </header>
