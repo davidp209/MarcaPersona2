@@ -1,0 +1,15 @@
+.RedesSociales{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.RedesSociales img{
+   
+
+    width: 50px; /* Ajusta el tamaño de las imágenes */
+    height: 50px; /* Mantiene la proporción de las imágenes */
+}
