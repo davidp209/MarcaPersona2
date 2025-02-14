@@ -1,10 +1,20 @@
 import logo from '../../assets/logos/mp-logoNaranja100.png'; // Importa la imagen
 import Idiomas from "../../componentes/idiomas/Idiomas";
 import './Cabecera.css';    
+import {useState} from 'react';
 
 
-const Cabecera = () => {
+const Cabecera = (props) => {
 
+    const [idioma, setIdioma] = useState('es');
+
+    function manejarSeleccion(idiomaSeleccionado){
+        setIdioma(idiomaSeleccionado);
+        mandarSeleccion(idiomaSeleccionado);
+    }
+    function mandarSeleccion(idiomaSeleccionado){
+        props.manejarSeleccion(idiomaSeleccionado);
+    }
     return (
          <>
             <header className="cabecera">
@@ -16,7 +26,7 @@ const Cabecera = () => {
                         <p>Marca Personal FP</p>
                     </div>
                     <div className="col-4">
-                        <Idiomas></Idiomas>
+                        <Idiomas manejarSeleccion = {manejarSeleccion}></Idiomas>
                     </div>
                 </div>  
             </header>

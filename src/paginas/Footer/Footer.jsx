@@ -1,12 +1,25 @@
 import RedesSociales from "../../componentes/RedesSociales/RedesSociales";
 import './Footer.css';
+import useContador from "../../hooks/useContador";
+import IdiomaContext from "../../componentes/contextos/idiomasContext";
+import idiomas from "../../mock-.idiomas.js";
+import {useContext} from 'react';
 
 
 const Footer = () => {
 
+    const contador = useContador();
+    const idioma = useContext(IdiomaContext);
+
     return(
         <>
         <div className="footer">
+                <div className="row">
+                    <div className="col-12">
+                        {contador.buscado ? <p>Cargando...</p> : <p>{idiomas[idioma].contadores.empresas}: {contador.contadores.numEmpresas} | Proyectos: {contador.contadores.numProyectos} | Alumnos: {contador.contadores.numAlumnos}</p>}
+
+                    </div>
+                </div>
                     <div className="row ">
                         <div className="col-12">
                             <h3>CIFP Carlos III</h3>
