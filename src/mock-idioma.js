@@ -1,13 +1,13 @@
 const idiomas = {
         "es": {
-        contadores: {
+        contador1: {
             empresas: "Empresas",
             proyectos: "Proyectos",
             alumnos: "Alumnos",
         }
         },
         "gb": {
-            contadores: {
+            contador1: {
                 empresas: "Companies",
                 proyectos: "Projects",
                 alumnos: "Students",

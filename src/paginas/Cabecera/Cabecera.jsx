@@ -27,6 +27,8 @@ const Cabecera = (props) => {
                     </div>
                     <div className="col-4">
                         <Idiomas manejarSeleccion = {manejarSeleccion}></Idiomas>
+                        <h2>{idioma}</h2>
+                   
                     </div>
                 </div>  
             </header>
