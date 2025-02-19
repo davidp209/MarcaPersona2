@@ -24,9 +24,9 @@ const Idiomas = (props) => {
     return (
         <>
 
-            <button value="es" onClick={asignarIdioma}><img className='imagenesBanderas' src={banderaEspaña} alt="Español" /></button>
-            <button value="gb" onClick={asignarIdioma}><img className='imagenesBanderas' src={banderaUK} alt="Inglés" /></button>
-        <h1>{idioma}</h1>
+            <button className='boton' value="es" onClick={asignarIdioma}><img className='imagenesBanderas' src={banderaEspaña} alt="Español" /></button>
+            <button className='boton' value="gb" onClick={asignarIdioma}><img className='imagenesBanderas' src={banderaUK} alt="Inglés" /></button>
+      {/* <h1>{idioma}</h1> */}
         
         
         </>

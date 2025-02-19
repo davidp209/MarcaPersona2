@@ -1,0 +1,26 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.card:hover .card-title {
+    background: rgba(0, 0, 0, 0.7);
+}

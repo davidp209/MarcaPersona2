@@ -1,0 +1,19 @@
+.footer{
+
+    text-align: center;
+    background-color: #364f59
+}
+.contenedor {
+    background-color: #f59432; /* Color de fondo de los contenedores */
+    padding: 10px; /* Ajusta el padding según tus necesidades */
+    margin: 5px; /* Ajusta el margen según tus necesidades */
+    width: 100px; /* Ancho fijo para los contenedores */
+    height: 100px; /* Alto fijo para los contenedores */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.white-letter{
+    color: white;
+}

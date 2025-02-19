@@ -1,9 +1,11 @@
 import './App.css';
-import Cabecera from './paginas/Cabecera/Cabecera';
-import Cuerpo from './paginas/Cuerpo/Cuerpo';
-import Footer from './paginas/Footer/Footer';
 import {useState} from 'react';
 import idiomasContext from './componentes/contextos/idiomasContext';
+import Home from './paginas/Home/Home';
+import Empresa from './paginas/Empresa/Empresa';
+import Proyectos from './componentes/Proyectos/Proyectos';
+import { Routes, Route } from 'react-router-dom';
+
 
 
 function App() {
@@ -16,13 +18,20 @@ function App() {
 
 
   return (
-    <div className='container'>
+    <div className='container-fluid'>
       <idiomasContext.Provider value={idioma}>
-        <Cabecera manejarSeleccion = {manejarSeleccion}></Cabecera>
-        <Cuerpo ></Cuerpo>
-        <Footer></Footer>
+      <Routes>
+            <Route path="/"
+                element={<Home></Home>} >     
+            </Route>     
+            <Route path="/empresa"
+                element={<Empresa></Empresa>} >
+            </Route>
+            <Route path="/empresa/proyectos"
+                element={<Proyectos></Proyectos>} >
+            </Route>
+        </Routes>
       </idiomasContext.Provider>
-
     </div>
   );
 }
