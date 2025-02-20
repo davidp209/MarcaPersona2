@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const MenuEmpresa = () => {
 
     return (
@@ -11,7 +13,7 @@ const MenuEmpresa = () => {
                                 <a className="nav-link active" href="#Empresa">Empresa</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#Poyectos" >Poyectos</a>
+                            <Link className="nav-link" to="/empresa/proyectos">Proyectos</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#Alumnos">Alumnos</a>

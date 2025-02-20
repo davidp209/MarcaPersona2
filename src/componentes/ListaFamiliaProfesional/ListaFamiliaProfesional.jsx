@@ -1,11 +1,18 @@
-const ListaFamiliaProfesional = () => {
-  return (
-    <>
-    
-    
-    
-    
-    </>
-  );
-}   
+ const ListaFamiliaProfesional = () => {
+    return (
+      <>
+      
+      
+      
+      
+      
+      
+      </>        
+
+
+
+
+
+    );
+}
 export default ListaFamiliaProfesional;
