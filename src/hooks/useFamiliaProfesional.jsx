@@ -5,7 +5,7 @@ const useFamiliaProfesional = () => {
     const [buscando, setBuscando] = useState(false);
     const [listaFamiliaProfesional, setListaFamiliaProfesional] = useState([]);
 
-    function obtenePosts(){
+    function obtenerFamilias(){
         
         //Marcamos que estamos buscando los datos
         setBuscando(true);
@@ -23,7 +23,7 @@ const useFamiliaProfesional = () => {
       }                 
       // Llamamos a la función de extracción de datos con un useEffect
       // para que solo se ejecute una vez
-      useEffect(obtenePosts, []);
+      useEffect(obtenerFamilias, []);
 
     return { buscando, listaFamiliaProfesional}
 }
