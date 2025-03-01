@@ -1,0 +1,18 @@
+.card-custom {
+    border-radius: 15px;
+  }
+  
+  .img-container {
+    flex: 1 1 33%;
+  }
+  
+  .img-custom {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .content-container {
+    flex: 1 1 67%;
+  }

@@ -1,8 +1,10 @@
 .cabecera{
 
-    background-color: #364f59
+    background-color: #364f59;
+    color: white;
 }
 .titulo{
     text-align: center;
+    padding: 20px;
 
 }

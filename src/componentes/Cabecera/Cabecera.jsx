@@ -16,19 +16,21 @@ const Cabecera = (props) => {
         props.manejarSeleccion(idiomaSeleccionado);
     }
     return (
-        <header className="cabecera">
+        <div className="cabecera">
             <div className="row">
-                <div className="col-4">
-                    <img className="logo" src={logo} alt="Logo" /> 
+                <div className="col-1">
+        
+                    <img  className="logo w-100" src={logo} alt="Logo" /> 
+
                 </div>
-                <div className="col-4 titulo" >
+                <div className="col-10 titulo" >
                     <p>Marca Personal FP</p>
                 </div>
-                <div className="col-4 text-end">
+                <div className="col-1 ">
                     <Idiomas manejarSeleccion={manejarSeleccion} />
                 </div>
             </div>  
-        </header>
+        </div>
     )
 
 }

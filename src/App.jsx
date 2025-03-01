@@ -16,7 +16,6 @@ function App() {
       setIdioma(idiomaSeleccionado);
   }
 
-
   return (
     <div className='container-fluid'>
       <idiomasContext.Provider value={idioma}>

@@ -1,26 +1,67 @@
 .card {
-    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #66808b;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
     overflow: hidden;
+  }
+
+  .card:hover {
+    border-radius: 15px;
     cursor: pointer;
-    transition: transform 0.3s;
-}
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: #f59432;
+  }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  .first-content {
+    height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    transition: background 0.3s;
-}
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
 
-.card:hover .card-title {
-    background: rgba(0, 0, 0, 0.7);
-}
+  .card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.6s ease-in-out; /* Ajusta la duración y la función de tiempo de la transición */
+    font-size: 0px;
+    transform: rotate(0deg) scale(0.5); /* Cambia la rotación y la escala inicial */
+  }
+
+  .card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+
+  .image-container:hover .second-content {
+    height: 100%;
+    opacity: 1;
+    font-size: 20px; /* Ajusta el tamaño de la fuente al pasar el cursor */
+    transform: rotate(0deg) scale(1); /* Restablece la rotación y la escala al pasar el cursor */
+  }
+
+  .imagen {
+    width: 150%;
+    object-fit: cover;
+  }
