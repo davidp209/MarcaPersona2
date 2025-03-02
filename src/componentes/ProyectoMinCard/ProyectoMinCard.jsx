@@ -1,4 +1,5 @@
 import './ProyectoMinCard.css';
+import imagenPerfil from '../../assets/perfilCards/1.jpg';
 
 const ProyectoMinCard = (props) => {
 
@@ -9,7 +10,7 @@ const ProyectoMinCard = (props) => {
             {/* Imagen a la izquierda */}
             <div className="flex-shrink-0 img-container">
               <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
+                src={imagenPerfil}
                 alt="Imagen representativa"
                 className="img-fluid img-custom"
               />
