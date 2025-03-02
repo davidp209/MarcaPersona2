@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom';
+import './MenuEmpresa.css';
+import IdiomaContext from "../../componentes/contextos/idiomasContext";
+import { useContext } from "react";
+import idiomas from "../../mock-idioma";
 
 const MenuEmpresa = () => {
+
+    const idioma = useContext(IdiomaContext);
+
+    
 
     return (
        <>
@@ -10,13 +18,13 @@ const MenuEmpresa = () => {
                     <nav>
                         <ul className="nav nav-pills">
                             <li className="nav-item">
-                                <a className="nav-link active" href="#Empresa">Empresa</a>
+                                <a className="nav-link" href="#Empresa">{idiomas[idioma].contador1.empresas}</a>
                             </li>
                             <li className="nav-item">
-                            <Link className="nav-link" to="/empresa/proyectos">Proyectos</Link>
+                            <Link className="nav-link" to="/empresa/proyectos">{idiomas[idioma].contador1.proyectos}</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#Alumnos">Alumnos</a>
+                                <Link className="nav-link"  to="/empresa/alumnos" >{idiomas[idioma].contador1.alumnos}</Link>
                             </li>
                         </ul>
                     </nav>

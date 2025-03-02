@@ -2,8 +2,6 @@ import './ProyectoMinCard.css';
 
 const ProyectoMinCard = (props) => {
 
-
-    
     return (
       <div className="col-12 col-md-6 col-lg-3 mb-4">
         <div className="card p-3 shadow-sm card-custom">

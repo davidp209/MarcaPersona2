@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logos/mp-logoNaranja100.png'; // Importa la imagen
 import Idiomas from "../idiomas/Idiomas";
 import './Cabecera.css';    
@@ -19,11 +20,11 @@ const Cabecera = (props) => {
         <div className="cabecera">
             <div className="row">
                 <div className="col-1">
-        
-                    <img  className="logo w-100" src={logo} alt="Logo" /> 
-
+                    <Link to="/">
+                        <img  className="logo w-100" src={logo} alt="Logo" /> 
+                    </Link>
                 </div>
-                <div className="col-10 titulo" >
+                <div className="col-10 tituloMarcaPersonal" >
                     <p>Marca Personal FP</p>
                 </div>
                 <div className="col-1 ">

@@ -1,0 +1,55 @@
+.card-border-radius {
+    border-radius: 20px; 
+    box-shadow: 0 -10px 10px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.1); /* Añadida sombra */
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .card-border-radius:hover {
+    transform: scale(1.05); 
+  }
+  
+  .avatar-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%; 
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .avatar-img:hover {
+    transform: scale(1.1); /
+  }
+  
+  .idioma-img {
+    width: 25px; 
+    height: 20px; 
+    margin-right: 10px; 
+    border-radius: 3px; 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .idioma-img:hover {
+    transform: scale(1.1); 
+  }
+  
+  .fondoCard {
+    background-color: #f8f9fa; 
+    padding: 20px; 
+    border: 1px solid #e0e0e0; 
+  }
+  
+  .fondoInteriorCard {
+    background-color: #ffffff; 
+    padding: 10px; 
+    border-radius: 10px; 
+  }
+  
+  .titulos {
+    color: #333; 
+    font-weight: bold; 
+  }
+  
+  .sobre-mi {
+    color: #666; 
+    font-style: italic; 
+  }
